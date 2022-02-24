@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="extentlisteners.ExtentListeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="azureCICD.Test1">
+        <methods>
+          <include name="skipme"/>
+          <include name="failme"/>
+        </methods>
+      </class> <!-- azureCICD.Test1 -->
+      <class name="azureCICD.Test2">
+        <methods>
+          <include name="testcaseimplement2" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- azureCICD.Test2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TestResponse reqID='hh' reqDate='2018-07-02T11:23:09'>
+    <WReqs>
+        <WR wReqId='A' wRNo='my1' wt='3e'>
+            <Rp>
+                <R key='cr'>
+                    <Values>
+                        <Value key='c' val=''/>
+                     
+                        
+                    </Values>
+                </R>
+ 
+                <R key='cr'>
+                    <Values>                    </Values>
+               
+            </R>
+</Rp>
+        </WR>
+        <WR wReqId='A' wRNo='my1' wt='3e' >
+            <Rp>
+                <R key='cr'>
+                    <Values>
+                          <Value key='c9' val=''/>
+                    </Values>
+                </R>
+
+                <R key='cr'>
+                    <Values>
+                      
+                        <Value key='t19' val=''/>
+                    </Values>
+                </R>
+                <R key='cr'>
+                    <Values>
+                       
+                       
+                    
+                        
+                        <Value key='t' val=''/>
+                    </Values>
+                </R>
+            </Rp>
+        </WR>
+        
+    </WReqs>
+</TestResponse>
