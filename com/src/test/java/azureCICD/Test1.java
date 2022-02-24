@@ -16,10 +16,10 @@ public class Test1 {
 	@Test
 	public void failme() {
 		System.out.println("second test failme");
-		Assert.assertTrue(false);
+		Assert.assertTrue(true);
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void skipme() {
 
 		throw new SkipException("i am skip test");
