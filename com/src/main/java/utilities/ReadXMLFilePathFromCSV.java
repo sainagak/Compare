@@ -83,6 +83,7 @@ public class ReadXMLFilePathFromCSV {
 		catch (FileNotFoundException e) {
 		System.out.println("The required CSV file: " + CSVfileOftestData
 					+ " Not found in datafile or TestData file properties files");
+			System.out.println(System.getProperty("user.dir") + "\\com\\src\\test\\resources\\resources\\data.properties");
 			return null;
 		}
 
