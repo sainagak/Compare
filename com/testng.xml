@@ -8,9 +8,7 @@
 	<test name="Test">
 		<classes>
 			<class name="azureCICD.Test1" />
-			<class name="azureCICD.Test2" />
-			
-			
+			<class name="azureCICD.Test2" />			
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -6,12 +6,6 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="azureCICD.Test1">
-        <methods>
-          <include name="skipme"/>
-          <include name="failme"/>
-        </methods>
-      </class> <!-- azureCICD.Test1 -->
       <class name="azureCICD.Test2">
         <methods>
           <include name="testcaseimplement2" invocation-numbers="0"/>

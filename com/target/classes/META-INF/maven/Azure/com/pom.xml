@@ -5,6 +5,16 @@
 	<groupId>Azure</groupId>
 	<artifactId>com</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <maven.compiler.source>1.8</maven.compiler.source>
+
+    <maven.compiler.target>1.8</maven.compiler.target>
+
+  </properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -34,7 +44,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.20.1</version>
+				<version>3.0.0-M5</version>
 				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
