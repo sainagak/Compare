@@ -25,7 +25,7 @@ public class ReadXMLFilePathFromCSV {
 		try {
 			// reading data properties file for testData CSV file path
 			DataPropertiesfile = new FileInputStream(
-					System.getProperty("user.dir") + "\\com\\src\\test\\resources\\resources\\data.properties");
+					System.getProperty("user.dir") + "/src/test/resources/resources/data.properties");
 			System.out.println(System.getProperty("user.dir") + "\\com\\src\\test\\resources\\resources\\data.properties");
 			prop.load(DataPropertiesfile);
 
