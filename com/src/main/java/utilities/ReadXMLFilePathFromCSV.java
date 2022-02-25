@@ -25,13 +25,13 @@ public class ReadXMLFilePathFromCSV {
 		try {
 			// reading data properties file for testData CSV file path
 			DataPropertiesfile = new FileInputStream(
-					System.getProperty("user.dir") + "\\src\\test\\resources\\resources\\data.properties");
+					System.getProperty("user.dir") + "\\com\\src\\test\\resources\\resources\\data.properties");
 			prop.load(DataPropertiesfile);
 
 			testDataCSV = prop.getProperty(CSVfileOftestData);
 
 			csvReader = new CSVReader(
-					new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\testdata\\" + testDataCSV));
+					new FileReader(System.getProperty("user.dir") + "\\com\\src\\test\\resources\\testdata\\" + testDataCSV));
 
 			List<String[]> allRows = csvReader.readAll();
 			int countNoOfYesScenarios = 0;
