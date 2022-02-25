@@ -26,7 +26,7 @@ public class ReadXMLFilePathFromCSV {
 			// reading data properties file for testData CSV file path
 			DataPropertiesfile = new FileInputStream(
 					System.getProperty("user.dir") + "/src/test/resources/resources/data.properties");
-			System.out.println(System.getProperty("user.dir") + "\\com\\src\\test\\resources\\resources\\data.properties");
+			System.out.println(System.getProperty("user.dir") + "/src/test/resources/resources/data.properties");
 			prop.load(DataPropertiesfile);
 
 			testDataCSV = prop.getProperty(CSVfileOftestData);
@@ -83,7 +83,7 @@ public class ReadXMLFilePathFromCSV {
 		catch (FileNotFoundException e) {
 		System.out.println("The required CSV file: " + CSVfileOftestData
 					+ " Not found in datafile or TestData file properties files");
-			System.out.println(System.getProperty("user.dir") + "\\com\\src\\test\\resources\\resources\\data.properties");
+			System.out.println(System.getProperty("user.dir") + "/src/test/resources/resources/data.properties");
 			return null;
 		}
 
