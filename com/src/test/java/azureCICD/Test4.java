@@ -15,8 +15,10 @@ public class Test4 extends CompareXMLFiles {
 	@Test
 	public void ReaddataAndCompare() throws Exception {
 		System.out.println("before reading csv file");
-		CSVReader csvReader = new CSVReader(new FileReader(System.getProperty("user.dir") + "\\TD2.csv"));
+		CSVReader csvReader = new CSVReader(new FileReader(System.getProperty("user.dir") + "//TD2.csv"));
 		System.out.println(csvReader);
+		System.out.println("After reading CSV");
+		
 		List<String[]> allRows = csvReader.readAll();
 		for (String[] row : allRows) {
 
