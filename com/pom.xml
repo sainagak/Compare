@@ -5,16 +5,8 @@
 	<groupId>Azure</groupId>
 	<artifactId>com</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<repository>
-  <id>123saishiva</id>
-  <url>https://pkgs.dev.azure.com/123saishiva/_packaging/123saishiva/maven/v1</url>
-  <releases>
-    <enabled>true</enabled>
-  </releases>
-  <snapshots>
-    <enabled>true</enabled>
-  </snapshots>
-		</repository>
+	
+ 
 	<properties>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
