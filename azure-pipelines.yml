@@ -27,3 +27,9 @@ steps:
     targetPath: '$(Pipeline.Workspace)'
     artifact: 'repor'
     publishLocation: 'pipeline'
+    steps:
+- task: DownloadPipelineArtifact@2
+  inputs:
+    artifact: WebApp
+    patterns: '**/*.html'
+    path: $(Build.SourcesDirectory)/TestResults
