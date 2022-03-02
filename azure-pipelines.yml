@@ -32,4 +32,4 @@ steps:
   inputs:
     artifact: 'repor'
     patterns: '**/*.html'
-    path: $(Build.SourcesDirectory)/TestResults
+    path: $(Pipeline.Workspace)
