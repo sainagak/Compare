@@ -30,6 +30,6 @@ steps:
     steps:
 - task: DownloadPipelineArtifact@2
   inputs:
-    artifact: WebApp
+    artifact: 'repor'
     patterns: '**/*.html'
     path: $(Build.SourcesDirectory)/TestResults
