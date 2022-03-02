@@ -21,7 +21,7 @@ public class ReadXMLFilePathBasedonExecutionStatusfromExcel extends ExtentListen
 		
 		try {
 
-						workbook = new XSSFWorkbook(System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\Testdata.xlsx");
+		workbook = new XSSFWorkbook(System.getProperty("user.dir")+"//src//test//resources//testdata//Testdata.xlsx");
 
 			XSSFSheet sheetname = workbook.getSheet(WorktypeSheetname);
 
