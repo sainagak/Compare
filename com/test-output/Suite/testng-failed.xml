@@ -11,6 +11,11 @@
           <include name="testcaseimplement2" invocation-numbers="0"/>
         </methods>
       </class> <!-- azureCICD.Test2 -->
+      <class name="azureCICD.Test4">
+        <methods>
+          <include name="ReaddataAndCompare" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- azureCICD.Test4 -->
       <class name="azureCICD.Test3">
         <methods>
           <include name="testcaseimplement3" invocation-numbers="0"/>
