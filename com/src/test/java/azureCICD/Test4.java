@@ -87,9 +87,9 @@ public class Test4 extends CompareXMLFiles {
 	@DataProvider(name = "dp")
 	public Object[][] dt() throws IOException, CsvException {
 		System.out.println("before reading csv file");
-		CSVReader csvReader = new CSVReader(new FileReader(System.getProperty("user.dir") + "//TD2.csv"));
-		System.out.println(System.getProperty("user.dir") + "//TD2.csv");
+		CSVReader csvReader = new CSVReader(new FileReader(System.getProperty("user.dir") + "\\TD2.csv"));
 		System.out.println("after reading csv file");
+
 		System.out.println(csvReader);
 		Object[][] data = null;
 		List<String[]> allRows = csvReader.readAll();

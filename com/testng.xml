@@ -5,12 +5,31 @@
 		<listener class-name="extentlisteners.ExtentListeners">
 		</listener>
 	</listeners>
-	<test name="Test">
+	<test name="Test" enabled="true">
 		<classes>
 			<class name="azureCICD.Test1" />
+		</classes>
+	</test>
+	<test name="Test2" enabled="false">
+		<classes>
 			<class name="azureCICD.Test2" />
+		</classes>
+	</test>
+	<test name="Test3" enabled="false">
+		<classes>
 			<class name="azureCICD.Test3" />
+		</classes>
+	</test>
+	<test name="Test4" enabled="true">
+		<classes>
 			<class name="azureCICD.Test4" />
 		</classes>
-	</test> <!-- Test -->
+	</test>
+	<test name="Test5" enabled="true">
+		<classes>
+			<class name="azureCICD.Test5Excel" />
+		</classes>
+	</test>
+
+
 </suite> <!-- Suite -->
