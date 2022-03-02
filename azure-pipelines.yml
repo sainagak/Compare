@@ -18,6 +18,7 @@ steps:
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
+    PublishPipelineArtifact@1: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 - task: PublishPipelineArtifact@1
