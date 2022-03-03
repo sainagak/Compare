@@ -18,7 +18,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 public class ExtentListeners implements ITestListener, ISuiteListener {
 
 	static Date d = new Date();
-	static String fileName = "Extent_Report_" + d.toString().replace(":", "_").replace(" ", "_") + ".pdf";
+	static String fileName = "Extent_Report_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
 
 	private static ExtentReports extent = ExtentManager.CreateReportFile(".\\reports\\" + fileName);
 

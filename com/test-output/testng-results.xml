@@ -2,28 +2,28 @@
 <testng-results ignored="1" total="6" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-03T11:01:41 IST" name="Suite" finished-at="2022-03-03T11:01:44 IST" duration-ms="2830">
+  <suite started-at="2022-03-03T11:16:06 IST" name="Suite" finished-at="2022-03-03T11:16:08 IST" duration-ms="2464">
     <groups>
     </groups>
-    <test started-at="2022-03-03T11:01:41 IST" name="Test" finished-at="2022-03-03T11:01:41 IST" duration-ms="74">
+    <test started-at="2022-03-03T11:16:06 IST" name="Test" finished-at="2022-03-03T11:16:06 IST" duration-ms="75">
       <class name="azureCICD.Test1">
-        <test-method signature="failme()[pri:0, instance:azureCICD.Test1@79dc5318]" started-at="2022-03-03T11:01:41 IST" name="failme" finished-at="2022-03-03T11:01:41 IST" duration-ms="19" status="PASS">
+        <test-method signature="failme()[pri:0, instance:azureCICD.Test1@79dc5318]" started-at="2022-03-03T11:16:06 IST" name="failme" finished-at="2022-03-03T11:16:06 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failme -->
-        <test-method signature="printme()[pri:0, instance:azureCICD.Test1@79dc5318]" started-at="2022-03-03T11:01:41 IST" name="printme" finished-at="2022-03-03T11:01:41 IST" duration-ms="1" status="PASS">
+        <test-method signature="printme()[pri:0, instance:azureCICD.Test1@79dc5318]" started-at="2022-03-03T11:16:06 IST" name="printme" finished-at="2022-03-03T11:16:06 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- printme -->
-        <test-method signature="whoisme()[pri:0, instance:azureCICD.Test1@79dc5318]" started-at="2022-03-03T11:01:41 IST" name="whoisme" finished-at="2022-03-03T11:01:41 IST" duration-ms="2" status="PASS">
+        <test-method signature="whoisme()[pri:0, instance:azureCICD.Test1@79dc5318]" started-at="2022-03-03T11:16:06 IST" name="whoisme" finished-at="2022-03-03T11:16:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- whoisme -->
       </class> <!-- azureCICD.Test1 -->
     </test> <!-- Test -->
-    <test started-at="2022-03-03T11:01:42 IST" name="Test5" finished-at="2022-03-03T11:01:44 IST" duration-ms="1958">
+    <test started-at="2022-03-03T11:16:06 IST" name="Test5" finished-at="2022-03-03T11:16:08 IST" duration-ms="1768">
       <class name="azureCICD.Test5Excel">
-        <test-method signature="test5excel(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:azureCICD.Test5Excel@74589991]" started-at="2022-03-03T11:01:44 IST" name="test5excel" data-provider="dp" finished-at="2022-03-03T11:01:44 IST" duration-ms="217" status="PASS">
+        <test-method signature="test5excel(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:azureCICD.Test5Excel@74589991]" started-at="2022-03-03T11:16:08 IST" name="test5excel" data-provider="dp" finished-at="2022-03-03T11:16:08 IST" duration-ms="208" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,9 +46,9 @@
         </test-method> <!-- test5excel -->
       </class> <!-- azureCICD.Test5Excel -->
     </test> <!-- Test5 -->
-    <test started-at="2022-03-03T11:01:44 IST" name="Test6" finished-at="2022-03-03T11:01:44 IST" duration-ms="66">
+    <test started-at="2022-03-03T11:16:08 IST" name="Test6" finished-at="2022-03-03T11:16:08 IST" duration-ms="56">
       <class name="azureCICD.Test6CSV">
-        <test-method signature="test5excel(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:azureCICD.Test6CSV@1046d517]" started-at="2022-03-03T11:01:44 IST" name="test5excel" data-provider="dp" finished-at="2022-03-03T11:01:44 IST" duration-ms="45" status="PASS">
+        <test-method signature="test6CSV(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:azureCICD.Test6CSV@3b7d3a38]" started-at="2022-03-03T11:16:08 IST" name="test6CSV" data-provider="dp" finished-at="2022-03-03T11:16:08 IST" duration-ms="39" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -68,7 +68,7 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test5excel -->
+        </test-method> <!-- test6CSV -->
       </class> <!-- azureCICD.Test6CSV -->
     </test> <!-- Test6 -->
   </suite> <!-- Suite -->

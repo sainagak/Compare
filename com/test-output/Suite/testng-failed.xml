@@ -8,7 +8,7 @@
     <classes>
       <class name="azureCICD.Test6CSV">
         <methods>
-          <include name="test5excel"/>
+          <include name="test6CSV"/>
         </methods>
       </class> <!-- azureCICD.Test6CSV -->
     </classes>

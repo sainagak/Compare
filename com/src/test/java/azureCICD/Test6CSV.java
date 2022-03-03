@@ -14,7 +14,7 @@ import utilities.ReadXMLFilePathFromCSV;
 
 public class Test6CSV extends CompareXMLFiles {
 	@Test(dataProvider = "dp", enabled = true)
-	public void test5excel(String i, String j, String k) throws Exception {
+	public void test6CSV(String i, String j, String k) throws Exception {
 
 		test.assignAuthor("SAINAGA").assignCategory("FUNCTIONAL").assignDevice("XML");
 
@@ -31,7 +31,7 @@ public class Test6CSV extends CompareXMLFiles {
 	@DataProvider(name = "dp")
 	public Object[][] getdata() throws IOException, CsvException {
 
-		return ReadXMLFilePathFromCSV.ReadPaths("TD2.csv");
+		return ReadXMLFilePathFromCSV.ReadPaths("testDataworktype2");
 		
 	}
 }

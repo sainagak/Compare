@@ -18,23 +18,25 @@ public class ReadXMLFilePathFromCSV {
 	public static FileInputStream DataPropertiesfile;
 
 	public static Object[][] ReadPaths(String CSVfileOftestData) throws IOException, CsvException {
-
+System.out.println(CSVfileOftestData);
 		Object[][] data = null;
 		final Properties prop;
 		prop = new Properties();
 		try {
 			// reading data properties file for testData CSV file path
-			/*
-			 * DataPropertiesfile = new FileInputStream( System.getProperty("user.dir") +
-			 * "\\src\\test\\resources\\resources\\data.properties");
-			 * 
-			 * prop.load(DataPropertiesfile);
-			 * 
-			 * testDataCSV = prop.getProperty(CSVfileOftestData);
-			 */
+			
+			  DataPropertiesfile = new FileInputStream( System.getProperty("user.dir") +
+			  "//src//test//resources//resources//data.properties");
+			  System.out.println(System.getProperty("user.dir") +
+					  "\\src\\test\\resources\\resources\\data.properties");
+			  
+			  prop.load(DataPropertiesfile);
+			  
+			  testDataCSV = prop.getProperty(CSVfileOftestData);
+			  System.out.println(testDataCSV);
 			System.out.println("befroe reading");
 			csvReader = new CSVReader(new FileReader(
-					System.getProperty("user.dir") + "//src//test//resources//testdata//"+CSVfileOftestData));
+					System.getProperty("user.dir") + "//src//test//resources//testdata//"+testDataCSV));
 			System.out.println("after reading");
 			List<String[]> allRows = csvReader.readAll();
 			int countNoOfYesScenarios = 0;
