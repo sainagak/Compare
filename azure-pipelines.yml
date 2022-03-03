@@ -28,8 +28,8 @@ steps:
     artifact: 'repor'
     publishLocation: 'pipeline'
     steps:
-- task: DownloadPipelineArtifact@2
-  inputs:
-    artifact: 'repor'
-    patterns: '**/*.html'
-    path: $(Pipeline.Workspace)
+#- task: DownloadPipelineArtifact@2
+ # inputs:
+  #  artifact: 'repor'
+   # patterns: '**/*.html'
+    # path: $(Pipeline.Workspace)
