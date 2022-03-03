@@ -24,21 +24,24 @@ public class ReadXMLFilePathFromCSV {
 		prop = new Properties();
 		try {
 			// reading data properties file for testData CSV file path
-			DataPropertiesfile = new FileInputStream(
-					System.getProperty("user.dir") + "\\src\\test\\resources\\resources\\data.properties");
-			
-			prop.load(DataPropertiesfile);
-
-			testDataCSV = prop.getProperty(CSVfileOftestData);
-
-			csvReader = new CSVReader(
-					new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\testdata\\" + testDataCSV));
-
+			/*
+			 * DataPropertiesfile = new FileInputStream( System.getProperty("user.dir") +
+			 * "\\src\\test\\resources\\resources\\data.properties");
+			 * 
+			 * prop.load(DataPropertiesfile);
+			 * 
+			 * testDataCSV = prop.getProperty(CSVfileOftestData);
+			 */
+			System.out.println("befroe reading");
+			csvReader = new CSVReader(new FileReader(
+					System.getProperty("user.dir") + "//src//test//resources//testdata//"+CSVfileOftestData));
+			System.out.println("after reading");
 			List<String[]> allRows = csvReader.readAll();
 			int countNoOfYesScenarios = 0;
 			// we are going to read data line by line
 			for (String[] row : allRows) {
 				try {
+					System.out.println("inside 2nd try block");
 					// System.out.println(Arrays.toString(row));
 					if (row[0].equals("y")) {
 						countNoOfYesScenarios++;
@@ -57,17 +60,17 @@ public class ReadXMLFilePathFromCSV {
 
 			for (String[] row : allRows) {
 				try {
-
+					System.out.println("inside storing data");
 					if (row[0].equals("y")) {
 
 						data[j][0] = row[1];
-						//System.out.println(data[j][0]);
+						// System.out.println(data[j][0]);
 
 						data[j][1] = row[2];
-						//System.out.println(data[j][1]);
+						// System.out.println(data[j][1]);
 
 						data[j][2] = row[3];
-						//System.out.println(data[j][2]);
+						// System.out.println(data[j][2]);
 
 						j++;
 					}
@@ -81,9 +84,10 @@ public class ReadXMLFilePathFromCSV {
 		}
 
 		catch (FileNotFoundException e) {
-		System.out.println("The required CSV file: " + CSVfileOftestData
+			System.out.println("The required CSV file: " + CSVfileOftestData
 					+ " Not found in datafile or TestData file properties files");
-			System.out.println(System.getProperty("user.dir") + "/src/test/resources/resources/data.properties");
+			// System.out.println(System.getProperty("user.dir") +
+			// "/src/test/resources/resources/data.properties");
 			return null;
 		}
 

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="azureCICD.Test4">
+      <class name="azureCICD.Test6CSV">
         <methods>
-          <include name="ReaddataAndCompare" invocation-numbers="0"/>
+          <include name="test5excel" invocation-numbers="0"/>
         </methods>
-      </class> <!-- azureCICD.Test4 -->
+      </class> <!-- azureCICD.Test6CSV -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

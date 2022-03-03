@@ -1,96 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="6" passed="3" failed="2" skipped="0">
+<testng-results ignored="1" total="6" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-02T15:34:14 IST" name="Suite" finished-at="2022-03-02T15:34:17 IST" duration-ms="2778">
+  <suite started-at="2022-03-03T11:01:41 IST" name="Suite" finished-at="2022-03-03T11:01:44 IST" duration-ms="2830">
     <groups>
     </groups>
-    <test started-at="2022-03-02T15:34:14 IST" name="Test" finished-at="2022-03-02T15:34:14 IST" duration-ms="100">
+    <test started-at="2022-03-03T11:01:41 IST" name="Test" finished-at="2022-03-03T11:01:41 IST" duration-ms="74">
       <class name="azureCICD.Test1">
-        <test-method signature="failme()[pri:0, instance:azureCICD.Test1@79dc5318]" started-at="2022-03-02T15:34:14 IST" name="failme" finished-at="2022-03-02T15:34:14 IST" duration-ms="24" status="PASS">
+        <test-method signature="failme()[pri:0, instance:azureCICD.Test1@79dc5318]" started-at="2022-03-03T11:01:41 IST" name="failme" finished-at="2022-03-03T11:01:41 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failme -->
-        <test-method signature="printme()[pri:0, instance:azureCICD.Test1@79dc5318]" started-at="2022-03-02T15:34:14 IST" name="printme" finished-at="2022-03-02T15:34:14 IST" duration-ms="2" status="PASS">
+        <test-method signature="printme()[pri:0, instance:azureCICD.Test1@79dc5318]" started-at="2022-03-03T11:01:41 IST" name="printme" finished-at="2022-03-03T11:01:41 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- printme -->
-        <test-method signature="whoisme()[pri:0, instance:azureCICD.Test1@79dc5318]" started-at="2022-03-02T15:34:14 IST" name="whoisme" finished-at="2022-03-02T15:34:14 IST" duration-ms="3" status="PASS">
+        <test-method signature="whoisme()[pri:0, instance:azureCICD.Test1@79dc5318]" started-at="2022-03-03T11:01:41 IST" name="whoisme" finished-at="2022-03-03T11:01:41 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- whoisme -->
       </class> <!-- azureCICD.Test1 -->
     </test> <!-- Test -->
-    <test started-at="2022-03-02T15:34:15 IST" name="Test4" finished-at="2022-03-02T15:34:15 IST" duration-ms="299">
-      <class name="azureCICD.Test4">
-        <test-method signature="ReaddataAndCompare(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:azureCICD.Test4@6af9fcb2]" started-at="2022-03-02T15:34:15 IST" name="ReaddataAndCompare" data-provider="dp" finished-at="2022-03-02T15:34:15 IST" duration-ms="267" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[src1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[trgt1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[hyhu]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertFalse(Assert.java:78)
-at org.testng.Assert.assertFalse(Assert.java:88)
-at azureCICD.Test4.ReaddataAndCompare(Test4.java:76)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ReaddataAndCompare -->
-      </class> <!-- azureCICD.Test4 -->
-    </test> <!-- Test4 -->
-    <test started-at="2022-03-02T15:34:15 IST" name="Test5" finished-at="2022-03-02T15:34:17 IST" duration-ms="1643">
+    <test started-at="2022-03-03T11:01:42 IST" name="Test5" finished-at="2022-03-03T11:01:44 IST" duration-ms="1958">
       <class name="azureCICD.Test5Excel">
-        <test-method signature="test5excel(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:azureCICD.Test5Excel@5505ae1a]" started-at="2022-03-02T15:34:17 IST" name="test5excel" data-provider="dp" finished-at="2022-03-02T15:34:17 IST" duration-ms="44" status="FAIL">
+        <test-method signature="test5excel(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:azureCICD.Test5Excel@74589991]" started-at="2022-03-03T11:01:44 IST" name="test5excel" data-provider="dp" finished-at="2022-03-03T11:01:44 IST" duration-ms="217" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -108,52 +41,35 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertFalse(Assert.java:78)
-at org.testng.Assert.assertFalse(Assert.java:88)
-at azureCICD.Test5Excel.test5excel(Test5Excel.java:26)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test5excel -->
       </class> <!-- azureCICD.Test5Excel -->
     </test> <!-- Test5 -->
+    <test started-at="2022-03-03T11:01:44 IST" name="Test6" finished-at="2022-03-03T11:01:44 IST" duration-ms="66">
+      <class name="azureCICD.Test6CSV">
+        <test-method signature="test5excel(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:azureCICD.Test6CSV@1046d517]" started-at="2022-03-03T11:01:44 IST" name="test5excel" data-provider="dp" finished-at="2022-03-03T11:01:44 IST" duration-ms="45" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[trgt1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hyhu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5excel -->
+      </class> <!-- azureCICD.Test6CSV -->
+    </test> <!-- Test6 -->
   </suite> <!-- Suite -->
 </testng-results>

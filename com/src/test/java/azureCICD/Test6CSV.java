@@ -2,16 +2,17 @@ package azureCICD;
 
 import java.io.IOException;
 
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
+import com.opencsv.exceptions.CsvException;
 
 import baseCode.CompareXMLFiles;
 import utilities.ReadXMLFilePathBasedonExecutionStatusfromExcel;
+import utilities.ReadXMLFilePathFromCSV;
 
-public class Test5Excel extends CompareXMLFiles{
+public class Test6CSV extends CompareXMLFiles {
 	@Test(dataProvider = "dp", enabled = true)
 	public void test5excel(String i, String j, String k) throws Exception {
 
@@ -28,10 +29,12 @@ public class Test5Excel extends CompareXMLFiles{
 	}
 
 	@DataProvider(name = "dp")
-	public Object[][] getdata() throws IOException {
+	public Object[][] getdata() throws IOException, CsvException {
 
-		return ReadXMLFilePathBasedonExecutionStatusfromExcel.ReadPaths("Sheet12");
+		return ReadXMLFilePathFromCSV.ReadPaths("TD2.csv");
 		
 	}
 }
+
+
 

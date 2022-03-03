@@ -4,22 +4,13 @@
   <listeners>
     <listener class-name="extentlisteners.ExtentListeners"/>
   </listeners>
-  <test thread-count="5" name="Test4(failed)">
+  <test thread-count="5" name="Test6(failed)">
     <classes>
-      <class name="azureCICD.Test4">
+      <class name="azureCICD.Test6CSV">
         <methods>
-          <include name="ReaddataAndCompare" invocation-numbers="0"/>
+          <include name="test5excel"/>
         </methods>
-      </class> <!-- azureCICD.Test4 -->
+      </class> <!-- azureCICD.Test6CSV -->
     </classes>
-  </test> <!-- Test4(failed) -->
-  <test thread-count="5" name="Test5(failed)">
-    <classes>
-      <class name="azureCICD.Test5Excel">
-        <methods>
-          <include name="test5excel" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- azureCICD.Test5Excel -->
-    </classes>
-  </test> <!-- Test5(failed) -->
+  </test> <!-- Test6(failed) -->
 </suite> <!-- Failed suite [Suite] -->

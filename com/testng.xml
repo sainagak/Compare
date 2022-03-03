@@ -20,7 +20,7 @@
 			<class name="azureCICD.Test3" />
 		</classes>
 	</test>
-	<test name="Test4" enabled="true">
+	<test name="Test4" enabled="false">
 		<classes>
 			<class name="azureCICD.Test4" />
 		</classes>
@@ -30,6 +30,12 @@
 			<class name="azureCICD.Test5Excel" />
 		</classes>
 	</test>
+	<test name="Test6" enabled="true">
+		<classes>
+			<class name="azureCICD.Test6CSV" />
+		</classes>
+	</test>
+	
 
 
 </suite> <!-- Suite -->
