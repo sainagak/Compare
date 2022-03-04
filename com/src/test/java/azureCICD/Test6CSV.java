@@ -2,6 +2,7 @@ package azureCICD;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -23,8 +24,8 @@ public class Test6CSV extends CompareXMLFiles {
 		comparefiles(System.getProperty("user.dir")+"//"+i+".xml", System.getProperty("user.dir")+"//"+j+".xml"); //
 		//System.out.println(NoOfDifferences);
 		test.log(Status.INFO, "Total No of actual differences after filtering: " + NoOfDifferences);
-       test.log(Status.FAIL, "test failed");
-	//	Assert.assertFalse(NoOfDifferences > 0);
+     //  test.log(Status.FAIL, "test failed");
+	  Assert.assertFalse(NoOfDifferences > 0);
 
 	}
 

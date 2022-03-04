@@ -20,7 +20,7 @@ public class ExtentListeners implements ITestListener, ISuiteListener {
 	static Date d = new Date();
 	static String fileName = "Extent_Report_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
 
-	private static ExtentReports extent = ExtentManager.CreateReportFile("\\reports\\" + fileName);
+	private static ExtentReports extent = ExtentManager.CreateReportFile("//reports//" + fileName);
 
 	public static  ExtentTest test;
 
