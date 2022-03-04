@@ -28,7 +28,7 @@ steps:
     artifact: 'repor'
     publishLocation: 'pipeline'
 
-steps:
+
 - task: CopyFiles@2
   inputs:
     contents: '**/*.html'
