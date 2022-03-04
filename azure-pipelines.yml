@@ -27,16 +27,17 @@ steps:
     targetPath: '$(Pipeline.Workspace)'
     artifact: 'repor'
     publishLocation: 'pipeline'
-
-
+    condition: succeededOrFailed()
 - task: CopyFiles@2
   inputs:
     contents: '**/*.html'
     targetFolder: $(Build.ArtifactStagingDirectory)
+    condition: succeededOrFailed()
 - task: PublishBuildArtifacts@1
   inputs:
     pathToPublish: $(Build.ArtifactStagingDirectory)
     artifactName: MyBuildOutputs
+    condition: succeededOrFailed()
 #- task: DownloadPipelineArtifact@2
  # inputs:
   #  artifact: 'repor'
