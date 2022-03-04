@@ -22,6 +22,7 @@ steps:
     #PublishPipelineArtifact@1: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+    condition: succeededOrFailed()
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Pipeline.Workspace)'
