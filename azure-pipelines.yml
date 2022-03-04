@@ -27,9 +27,20 @@ steps:
     targetPath: '$(Pipeline.Workspace)'
     artifact: 'repor'
     publishLocation: 'pipeline'
-    steps:
+
+steps:
+- task: CopyFiles@2
+  inputs:
+    contents: '**/*.html'
+    targetFolder: $(Build.ArtifactStagingDirectory)
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: $(Build.ArtifactStagingDirectory)
+    artifactName: MyBuildOutputs
 #- task: DownloadPipelineArtifact@2
  # inputs:
   #  artifact: 'repor'
    # patterns: '**/*.html'
     # path: $(Pipeline.Workspace)
+   
+    
