@@ -23,8 +23,8 @@ steps:
     #PublishPipelineArtifact@1: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-    failTaskOnFailedTests: true
-    continueOnError: true
+  #  failTaskOnFailedTests: true
+  #  continueOnError: true
     #condition: succeededOrFailed()
     
 - task: PublishPipelineArtifact@1
@@ -32,17 +32,17 @@ steps:
     targetPath: '$(Pipeline.Workspace)'
     artifact: 'repor'
     publishLocation: 'pipeline'
-    condition: succeededOrFailed()
+  #  condition: succeededOrFailed()
 - task: CopyFiles@2
   inputs:
     contents: '**/*.html'
     targetFolder: $(Build.ArtifactStagingDirectory)
-    condition: succeededOrFailed()
+  #  condition: succeededOrFailed()
 - task: PublishBuildArtifacts@1
   inputs:
     pathToPublish: $(Build.ArtifactStagingDirectory)
     artifactName: MyBuildOutputs
-    condition: succeededOrFailed()
+  #  condition: succeededOrFailed()
 #- task: DownloadPipelineArtifact@2
  # inputs:
   #  artifact: 'repor'
