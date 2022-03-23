@@ -8,8 +8,7 @@ trigger:
 
 #pool:
  # vmImage: ubuntu-latest
-  
-  strategy:
+strategy:
   matrix:
     linux:
       imageName: "ubuntu-latest"
