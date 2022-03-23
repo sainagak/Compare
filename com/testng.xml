@@ -5,7 +5,7 @@
 		<listener class-name="extentlisteners.ExtentListeners">
 		</listener>
 	</listeners>
-	<test name="Test" enabled="false">
+	<test name="Test" enabled="true">
 		<classes>
 			<class name="azureCICD.Test1" />
 		</classes>
