@@ -10,7 +10,7 @@
 			<class name="azureCICD.Test1" />
 		</classes>
 	</test>
-	<test name="Test2" enabled="true">
+	<test name="Test2" enabled="false">
 		<classes>
 			<class name="azureCICD.Test2" />
 		</classes>
