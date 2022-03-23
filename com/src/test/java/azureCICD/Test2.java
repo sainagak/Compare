@@ -25,7 +25,7 @@ public class Test2 extends CompareXMLFiles {
 
 		test.log(Status.INFO, "Total No of actual differences after filtering: " + NoOfDifferences);
 
-		test.log(Status.INFO, "test counter: ");
+		//test.log(Status.INFO, "test counter: ");
 
 		//Assert.assertFalse(NoOfDifferences > 0);
 
