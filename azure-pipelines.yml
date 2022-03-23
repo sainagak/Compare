@@ -27,11 +27,11 @@ steps:
   #  continueOnError: true
     #condition: succeededOrFailed()
     
-- task: PublishPipelineArtifact@1
-  inputs:
-    targetPath: '$(Pipeline.Workspace)'
-    artifact: 'repor'
-    publishLocation: 'pipeline'
+#- task: PublishPipelineArtifact@1
+ # inputs:
+  #  targetPath: '$(Pipeline.Workspace)'
+   # artifact: 'repor'
+    #publishLocation: 'pipeline'
   #  condition: succeededOrFailed()
 - task: CopyFiles@2
   inputs:
