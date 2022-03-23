@@ -14,8 +14,8 @@ public class Test1 {
 	}
 
 	@Test
-	public void failme() {
-		System.out.println("second test failme");
+	public void passMe() {
+		System.out.println("second test passme");
 		Assert.assertTrue(true);
 	}
 
@@ -26,8 +26,8 @@ public class Test1 {
 	}
 
 	@Test
-	public void whoisme() {
-		System.out.println("fourth test whosisme");
+	public void passthismethod() {
+		System.out.println("fourth test passthismethod");
 		Assert.assertTrue(true);
 	}
 }
