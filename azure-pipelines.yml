@@ -64,14 +64,15 @@ steps:
        archiveType: 'zip'
        archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
        replaceExistingArchive: true
+       
 
-- task: sendemail@1
+- task: SendEmail@1
   inputs:
     To: 'sainagaunique2@gmail.com'
     From: '123saishiva@gmail.com'
-    Subject: 'reports azure'
-    Body: 'Hello Buddy'
+    Subject: 'Hreports'
+    Body: 'hi buddy'
     BodyAsHtml: true
     AddAttachment: true
     Attachment: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-  #rvo.SendEmailTask.send-email-build-task.SendEmail@1
+    UseSSL: false
