@@ -33,13 +33,8 @@ steps:
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
-    #mavenAuthenticateFeed: true
-    #PublishPipelineArtifact@1: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-  #  failTaskOnFailedTests: true
-  #  continueOnError: true
-    #condition: succeededOrFailed()
     
 #- task: PublishPipelineArtifact@1
  # inputs:
@@ -51,16 +46,22 @@ steps:
   inputs:
     contents: '**/*.html'
     targetFolder: $(Build.ArtifactStagingDirectory)
-  #  condition: succeededOrFailed()
+  
 - task: PublishBuildArtifacts@1
   inputs:
     pathToPublish: $(Build.ArtifactStagingDirectory)
     artifactName: MyBuildOutputs
-  #  condition: succeededOrFailed()
+
 #- task: DownloadPipelineArtifact@2
  # inputs:
   #  artifact: 'repor'
    # patterns: '**/*.html'
     # path: $(Pipeline.Workspace)
-   
+- task: ArchiveFiles@2
+  inputs:
+       rootFolderOrFile: '$(Build.BinariesDirectory)'
+       includeRootFolder: true
+       archiveType: 'zip'
+       archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+       replaceExistingArchive: true
     
