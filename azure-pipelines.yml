@@ -64,12 +64,7 @@ steps:
        archiveType: 'zip'
        archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
        replaceExistingArchive: true
-    
-- task: sendemail@0
-  inputs:
-    emailToAddress: 'sainagaunique2@gmail.com'
-    emailSubject: 'send email with build reports'
-    emailBody: 'hey buddy'
+
 - task: SendEmail@1
   inputs:
     To: 'sainagaunique2@gmail.com'
