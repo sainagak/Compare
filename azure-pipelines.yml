@@ -74,4 +74,4 @@ steps:
     BodyAsHtml: true
     AddAttachment: true
     Attachment: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-  enabled: rvo.SendEmailTask.send-email-build-task.SendEmail
+  
