@@ -65,11 +65,13 @@ steps:
        archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
        replaceExistingArchive: true
 
-- task: SendGridEmail@2
+- task: SendEmail@1
   inputs:
-    SendGridApiKey: 'mm_9fDtrPi'
-    FromAddress: '123saishiva@gmail.com'
-    ToAddresses: 'sainagakondapellyg60@gmail.com'
-    Subject: 'please find output'
-    emailBodyFormat: 'File'
-    EmailBodyFile: '$(Build.ArtifactStagingDirectory)'
+    To: 'sainagakondapellyg60@gmail.com'
+    From: '123saishiva@gmail.com'
+    Subject: 'hello'
+    Body: 'hello buddy'
+    BodyAsHtml: true
+    AddAttachment: true
+    Attachment: '$(Build.ArtifactStagingDirectory)'
+    UseSSL: false
