@@ -74,4 +74,4 @@ steps:
     BodyAsHtml: true
     AddAttachment: true
     Attachment: '$(Build.ArtifactStagingDirectory)'
-    UseSSL: false
+    UseSSL: true
