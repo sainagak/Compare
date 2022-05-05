@@ -64,14 +64,3 @@ steps:
        archiveType: 'zip'
        archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
        replaceExistingArchive: true
-
-- task: SendEmail@1
-  inputs:
-    To: 'sainagakondapellyg60@gmail.com'
-    From: '123saishiva@gmail.com'
-    Subject: 'hello'
-    Body: 'hello buddy'
-    BodyAsHtml: true
-    AddAttachment: true
-    Attachment: '$(Build.ArtifactStagingDirectory)'
-    UseSSL: true
