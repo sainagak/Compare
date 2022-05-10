@@ -1,0 +1,53 @@
+trigger:
+- main
+
+#pool:
+ # vmImage: ubuntu-latest
+strategy:
+  matrix:
+    linux:
+      imageName: "ubuntu-latest"
+  #  mac:
+  #    imageName: "macOS-latest"
+  #  windows:
+  #    imageName: "windows-latest"
+  maxParallel: 3
+
+pool:
+  vmImage: $(imageName)
+
+steps:
+- task: Maven@3
+  inputs:
+    
+    mavenPomFile: 'com/pom.xml'
+    mavenOptions: '-Xmx3072m'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.8'
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    goals: 'package'
+    
+- task: CopyFiles@2
+  inputs:
+    contents: '**/*.html'
+    targetFolder: $(Build.ArtifactStagingDirectory)
+  
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: $(Build.ArtifactStagingDirectory)
+    artifactName: MyBuildOutputs
+
+- task: SendEmail@1
+  inputs:
+    To: 'sainagaunique2@gmail.com'
+    From: '123saishiva@gmail.com'
+    Subject: 'hello'
+    Body: 'hehehe'
+    BodyAsHtml: false
+    AddAttachment: true
+    Attachment: '$(Build.ArtifactStagingDirectory)'
+    SmtpServer: 'smtp.gmail.com'
+    SmtpUsername: '123saishiva@gmail.com'
+    SmtpPassword: 'Sainaga@1997'
