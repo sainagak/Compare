@@ -28,9 +28,9 @@ public class Test6CSV extends CompareXMLFiles {
 		if(NoOfDifferences>0);{
       test.log(Status.FAIL, "test failed");
 		}
-		//SoftAssert sa=new SoftAssert();
-	 // sa.assertFalse(NoOfDifferences > 0);
-	  //sa.assertAll();
+		SoftAssert sa=new SoftAssert();
+	  sa.assertFalse(NoOfDifferences > 0);
+	  sa.assertAll();
 
 	}
 
