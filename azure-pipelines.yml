@@ -42,7 +42,7 @@ steps:
     targetPath: '$(Pipeline.Workspace)'
     artifact: 'publishpipelinertifactbuddy'
     publishLocation: 'pipeline'
-  
+  condition: succeededOrFailed()
 - task: CopyFiles@2
   inputs:
     contents: '**/*.html'
