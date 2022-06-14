@@ -43,11 +43,11 @@ steps:
     artifact: 'publishpipelinertifactbuddy'
     publishLocation: 'pipeline'
   condition: succeededOrFailed()
-- task: CopyFiles@2
-  inputs:
-    contents: '**/*.html'
-    targetFolder: $(Build.ArtifactStagingDirectory)
-  condition: succeededOrFailed()
+- #task: CopyFiles@2
+  #inputs:
+    #contents: '**/*.html'
+    #targetFolder: $(Build.ArtifactStagingDirectory)
+  #condition: succeededOrFailed()
 - task: CopyFiles@2
   inputs:
     contents: '**/reports/*.html'
