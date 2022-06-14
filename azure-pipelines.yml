@@ -52,9 +52,3 @@ steps:
     pathToPublish: $(Build.ArtifactStagingDirectory)
     artifactName: MyBuildOutputs
   condition: succeededOrFailed()
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(System.DefaultWorkingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
-  condition: succeededOrFailed()
