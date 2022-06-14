@@ -57,3 +57,4 @@ steps:
     PathtoPublish: '$(System.DefaultWorkingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
+  condition: succeededOrFailed()
