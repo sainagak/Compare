@@ -54,11 +54,11 @@ steps:
     artifactName: MyBuildOutputs
   condition: succeededOrFailed()
 
-#- task: DownloadPipelineArtifact@2
- # inputs:
-  #  artifact: 'repor'
-   # patterns: '**/*.html'
-    # path: $(Pipeline.Workspace)
+- task: DownloadPipelineArtifact@2
+  inputs:
+    artifact: 'repor'
+    patterns: '**/*.html'
+    path: $(Pipeline.Workspace)
 - task: ArchiveFiles@2
   inputs:
        rootFolderOrFile: '$(Build.BinariesDirectory)'
