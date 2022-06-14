@@ -39,7 +39,7 @@ steps:
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Pipeline.Workspace)'
-    artifact: 'publishpipelinertifactbuddy'
+    artifact: 'publishpipeline'
     publishLocation: 'pipeline'
   condition: succeededOrFailed()
 - task: CopyFiles@2
