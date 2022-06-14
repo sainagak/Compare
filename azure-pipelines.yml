@@ -52,8 +52,3 @@ steps:
     pathToPublish: $(Build.ArtifactStagingDirectory)
     artifactName: MyBuildOutputs
   condition: succeededOrFailed()
-- #task: DownloadPipelineArtifact@2
-  #inputs:
-    #artifact: 'repor'
-    #patterns: '**/*.html'
-    #path: $(Pipeline.Workspace)
